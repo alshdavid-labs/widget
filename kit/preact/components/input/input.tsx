@@ -1,6 +1,6 @@
 import './input.scss'
 import { h } from 'preact'
-import { useService$ } from '~/platform/context'
+import { useService$ } from '~/kit/preact/context'
 
 export type InputProps = h.JSX.HTMLAttributes<HTMLInputElement>
 

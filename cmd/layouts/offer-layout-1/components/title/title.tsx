@@ -1,6 +1,6 @@
 import './title.scss'
 import { h } from "preact"
-import { useService$ } from "~/platform/context"
+import { useService$ } from "~/kit/preact/context"
 
 export type TitleProps = h.JSX.HTMLAttributes<HTMLDivElement>
 

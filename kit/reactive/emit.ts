@@ -1,4 +1,4 @@
-import { Emitter } from "./emitter"
+import { Emitter, Subscribable } from "./emitter"
 
 export function EmitOnChange() {
   return function(target: any, key: string) {
@@ -17,3 +17,22 @@ export function EmitOnChange() {
     })
   }
 }
+
+export const getSubscribable = <T>(
+  target: T
+): Subscribable<T> => {
+  if (!(target as any).subscribe) {
+    throw new Error('Cannot Subscribe')
+  }
+  return (target as any)
+}
+
+export const firstEvent = <T>(
+  target: T
+): Promise<T> => 
+  new Promise(res => {
+    const sub = getSubscribable(target).subscribe(v => {
+      res(v)
+      sub.unsubscribe()
+    })
+  })

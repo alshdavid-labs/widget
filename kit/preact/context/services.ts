@@ -1,7 +1,7 @@
 import { integration } from '~/platform/integration'
 
 export type Services = {
-  sessionService: integration.SessionService,
+  sessionService: integration.LayoutService,
   themeService: integration.ThemeService,
   copyService: integration.CopyService,
 }

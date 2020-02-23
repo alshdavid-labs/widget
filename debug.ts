@@ -9,7 +9,7 @@ export function setDebugValues(targets: Record<string, any>) {
 
 setDebugValues({
   setConfig: () => {
-    (window as any).sessionService.layoutCode = 'offer-layout-1';
+    (window as any).layoutService.code = 'offer-layout-1';
 
     (window as any).themeService.configurables = {
       "Defaults.FontColor": "#262626",

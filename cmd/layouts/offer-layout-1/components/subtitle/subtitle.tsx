@@ -1,6 +1,6 @@
 import './subtitle.scss'
 import { h } from "preact"
-import { useService$ } from "~/platform/context"
+import { useService$ } from "~/kit/preact/context"
 
 export type SubtitleProps = h.JSX.HTMLAttributes<HTMLDivElement>
 

@@ -1,10 +1,11 @@
 import './offer-layout-1.scss'
 import { h } from "preact"
-import { Input, LightboxContainer, Button, ButtonTheme, Attribution } from "~/platform/components"
-import { useService$ } from '~/platform/context'
+import { Input, LightboxContainer, Button, ButtonTheme, Attribution } from "~/kit/preact/components"
+import { useService$ } from '~/kit/preact/context'
 import { Header, Title, Subtitle } from './components'
+import { layout } from '~/platform/layout'
 
-export const OfferLayout1 = ({}) => {
+export const OfferLayout1 = () => {
   const copyService = useService$(s => s.copyService)
   
   return <LightboxContainer className="rokt-layout-offer-layout-1">

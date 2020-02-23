@@ -8,6 +8,7 @@ build:
 		--in cmd/frame \
 		--out dist \
 		--prod
+	cd dist && gzip -r -k .
 
 watch:
 	weeb pack \
