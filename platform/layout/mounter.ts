@@ -1,6 +1,8 @@
 export type MounterModule = {
-  default: Mounter
+  default: MounterFactory
 }
+
+export type MounterFactory = () => Mounter
 
 export interface Mounter {
   mount: (

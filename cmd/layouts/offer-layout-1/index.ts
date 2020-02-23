@@ -1,4 +1,7 @@
 import { preactMounter } from '~/kit/preact/mounter'
 import { OfferLayout1 } from './offer-layout-1'
+import { layout } from '~/platform/layout'
 
-export default new preactMounter.PreactMounter(OfferLayout1)
+const mounter: layout.MounterFactory = () => new preactMounter.PreactMounter(OfferLayout1)
+
+export default mounter

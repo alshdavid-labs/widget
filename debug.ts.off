@@ -9,9 +9,9 @@ export function setDebugValues(targets: Record<string, any>) {
 
 setDebugValues({
   setConfig: () => {
-    (window as any).layoutService.code = 'offer-layout-1';
+    window.layoutService.code = 'offer-layout-1';
 
-    (window as any).themeService.configurables = {
+    window.themeService.configurables = {
       "Defaults.FontColor": "#262626",
       "Defaults.FontFamily": "'Open Sans','Helvetica Neue',Helvetica,Tahoma,Arial,FreeSans,sans-serif",
       "Defaults.Colors.Disabled": "#A9D18C",
@@ -95,7 +95,7 @@ setDebugValues({
       "Copy.placement.roktPrivacyPolicy.markdown.link": "https://roktcdn1.akamaized.net/placements/privacy-policy"
     };
 
-    (window as any).copyService.copy = {
+    window.copyService.copy = {
       'heading': 'Your order is complete!',
       'title': "Redeem your Groupon directly from your mobile device.",
       'subtitle': "Confirm your mobile number below to receive a text with a download link for the Groupon app.",
