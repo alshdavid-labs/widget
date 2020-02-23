@@ -1,0 +1,25 @@
+.rokt-component-button {
+  padding: 12px 28px;
+  background-color: #999;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity .25 ease-in;
+  user-select: none;
+  text-align: center;
+  min-width: 190px;
+  line-height: inherit;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transition: opacity 0;
+    opacity: 0.6;
+  }
+}

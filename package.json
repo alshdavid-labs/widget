@@ -5,5 +5,14 @@
   "author": "David Alsh",
   "optionalDependencies": {
     "@alshdavid/pack": "*"
+  },
+  "dependencies": {
+    "csstype": "^2.6.9",
+    "preact": "^10.3.2",
+    "reaction-wheel": "^1.0.15",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.3"
   }
 }

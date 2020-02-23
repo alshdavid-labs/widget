@@ -1,0 +1,32 @@
+.rokt-component-lightbox-container {
+  border:0px;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &>div {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    margin-top: 64px;
+    margin-right: auto;
+    margin-bottom: 64px;
+    margin-left: auto;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 8px;
+    max-width: 650px;
+  }
+}

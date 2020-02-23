@@ -1,0 +1,30 @@
+.rokt-layout-offer-layout-1 {
+  .main-section {
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    padding: 1rem 1.5rem;
+
+    >.left {
+      margin-right: 20px;
+
+      >.button-container {
+        display: flex;
+        justify-content: flex-end;
+    
+        &>.rokt-component-button {
+          margin-right: 0px;
+          margin-left: 4px;
+        }
+      }
+
+      >.sms-notice {
+        color: rgb(175, 175, 175);
+        font-size: 0.7em;
+        line-height: 1.1;
+      }
+    }
+  }
+
+  
+}
