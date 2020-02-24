@@ -13,15 +13,16 @@ export class PreactMounter implements layout.Mounter {
   constructor(
     private LayoutComponent: () => h.JSX.Element
   ) {}
-  mount(
-    outlet: HTMLElement,
-    services: Services
-  ) {
+
+  mount(outlet: HTMLElement, services: Services) {
     render(
-      h(ServicesContext.Provider, { value: services, children: 
-        h(this.LayoutComponent, {})
-      }),
+      <ServicesContext.Provider 
+        value={services} 
+        children={
+          <this.LayoutComponent />
+        }/>,
       outlet
     )
   }
+
 }

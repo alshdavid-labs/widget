@@ -2,6 +2,7 @@
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
+    "**/**.off": true,
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,

@@ -2,9 +2,11 @@ import './header.scss'
 import { h } from "preact"
 import { useService$ } from "~/kit/preact/context"
 
-export type HeaderProps = {
+export type HTMLDivProps = h.JSX.HTMLAttributes<HTMLDivElement>
+
+export type HeaderProps = HTMLDivProps & {
   text: string
-} & h.JSX.HTMLAttributes<HTMLDivElement>
+} 
 
 export const Header = ({ text, style, className = '', ...props }: HeaderProps) => {
   const conf = useService$(s => s.themeService)

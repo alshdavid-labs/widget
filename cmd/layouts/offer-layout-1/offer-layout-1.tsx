@@ -3,7 +3,6 @@ import { h } from "preact"
 import { Input, LightboxContainer, Button, ButtonTheme, Attribution } from "~/kit/preact/components"
 import { useService$ } from '~/kit/preact/context'
 import { Header, Title, Subtitle } from './components'
-import { layout } from '~/platform/layout'
 
 export const OfferLayout1 = () => {
   const copyService = useService$(s => s.copyService)
@@ -29,7 +28,9 @@ export const OfferLayout1 = () => {
             Send Link
           </Button>  
         </div>
-        <p className="sms-notice">{copyService.getCopy('disclaimer')}</p> 
+        <p className="sms-notice">
+          {copyService.getCopy('disclaimer')}
+        </p> 
       </div>
       <div className="right">
         <img 
