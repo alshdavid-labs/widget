@@ -9,4 +9,6 @@ export interface Mounter {
     outlet: HTMLElement,
     services?: Record<string, any>
   ) => void
+
+  unmount: () => void
 }

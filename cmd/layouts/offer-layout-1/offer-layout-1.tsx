@@ -1,7 +1,7 @@
 import './offer-layout-1.scss'
 import { h } from "preact"
-import { Input, LightboxContainer, Button, ButtonTheme, Attribution } from "~/kit/preact/components"
-import { useService$ } from '~/kit/preact/context'
+import { Input, LightboxContainer, Button, ButtonTheme, Attribution } from "~/preact-internal/components"
+import { useService$ } from '~/preact-internal/context'
 import { Header, Title, Subtitle } from './components'
 
 export const OfferLayout1 = () => {

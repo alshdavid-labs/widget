@@ -1,6 +1,6 @@
 import './button.scss'
 import { h } from 'preact'
-import { useService$ } from '~/kit/preact/context'
+import { useService$ } from '~/preact-internal/context'
 import { separateStyles } from '~/platform/integration/theme-service'
 
 export enum ButtonTheme {

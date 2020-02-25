@@ -1,6 +1,6 @@
 import './header.scss'
 import { h } from "preact"
-import { useService$ } from "~/kit/preact/context"
+import { useService$ } from "~/preact-internal/context"
 
 export type HTMLDivProps = h.JSX.HTMLAttributes<HTMLDivElement>
 

@@ -1,4 +1,4 @@
-import { preactMounter } from '~/kit/preact/mounter'
+import { preactMounter } from '~/preact-internal/mounter'
 import { OfferLayout1 } from './offer-layout-1'
 import { layout } from '~/platform/layout'
 
